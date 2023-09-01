@@ -35,7 +35,7 @@ SRC_URI="https://github.com/MadSkipper/dracut-modules-sdcard-replug/archive/refs
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
 # If you don't need to change it, leave the S= line out of the ebuild
 # to keep it tidy.
-#S="${WORKDIR}/${P}"
+S="${WORKDIR}/"
 
 
 # License of the package.  This must match the name of file(s) in the
