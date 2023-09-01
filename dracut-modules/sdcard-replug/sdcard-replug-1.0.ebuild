@@ -30,8 +30,7 @@ HOMEPAGE=""
 
 # Point to any required sources; these will be automatically downloaded by
 # Portage.
-SRC_URI="https://github.com/MadSkipper/dracut-modules-sdcard-replug/archive/refs/tags/release-1.0.tar.gz"
-
+SRC_URI="https://github.com/MadSkipper/dracut-modules-sdcard-replug/archive/refs/tags/${P}.tar.gz"
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
 # If you don't need to change it, leave the S= line out of the ebuild
@@ -109,12 +108,14 @@ BDEPEND=">=sys-kernel/dracut-057-r3"
 # you only need to call it if you need a different behaviour.
 src_configure() {
 	#We don't have anything to configure yet
+	return 0
 }
 
 # The following src_compile function is implemented as default by portage, so
 # you only need to call it, if you need different behaviour.
 src_compile() {
 	# We have nothing to compile, as the package is a plain config for dracut
+	return 0
 }
 
 # The following src_install function is implemented as default by portage, so

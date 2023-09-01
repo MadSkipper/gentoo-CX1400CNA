@@ -109,12 +109,14 @@ BDEPEND=">=sys-kernel/dracut-057-r3"
 # you only need to call it if you need a different behaviour.
 src_configure() {
 	#We don't have anything to configure yet
+	return 0
 }
 
 # The following src_compile function is implemented as default by portage, so
 # you only need to call it, if you need different behaviour.
 src_compile() {
 	# We have nothing to compile, as the package is a plain config for dracut
+	return 0
 }
 
 # The following src_install function is implemented as default by portage, so
